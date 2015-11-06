@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/includes/session.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $rdio = null;
 
@@ -16,6 +17,13 @@ require_once __DIR__ . '/includes/fb.php';
 require_once __DIR__ . '/includes/api.php';
 require_once __DIR__ . '/includes/rdio/rdio.php';
 $rdio = new Rdio(array(RDIO_CONSUMER_KEY, RDIO_CONSUMER_SECRET));
+
+$rdio = new \AdamPaterson\OAuth2\Client\Provider\Rdio([
+    'clientId'          => RDIO_CONSUMER_KEY,
+    'clientSecret'      => RDIO_CONSUMER_SECRET,
+    'redirectUri'       => RDIO_REDIRECT_URL,
+]);
+
 
 if ($st4Session) 
 {

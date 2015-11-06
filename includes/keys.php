@@ -1,8 +1,9 @@
 <?php
 
 # Prod Keys
-define('RDIO_CONSUMER_KEY', '9xpz5b9neg4fyrgq37y2ft9s');
-define('RDIO_CONSUMER_SECRET', 'XnbQME3KA7');
+define('RDIO_CONSUMER_KEY', '3giounwwyjcyvnpvlgla663fjq');
+define('RDIO_CONSUMER_SECRET', 'WTUGhXfelX7NznkBQN4cbA');
+define('RDIO_REDIRECT_URL', 'http://soundtrack4.dev/includes/rdio.php');
 
 # Dev Keys
 #define('RDIO_CONSUMER_KEY', 'hdd92c4ymbv9z7n5ahy35n7m');
