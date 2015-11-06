@@ -1,0 +1,5 @@
+{
+    "require": {
+        "adam-paterson/oauth2-rdio": "~1.0"
+    }
+}

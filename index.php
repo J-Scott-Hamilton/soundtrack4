@@ -101,7 +101,7 @@ else
 <title>Soundtrack4 Demo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Soundtrack4 Interface Version 1">
-<meta name="author" content="Stephen Young @stephenyoungdev">
+<meta name="author" content="Stephen Young @hownowstephen">
 
 <!-- Le styles -->
 <link href="css/bootstrap.css" rel="stylesheet">
