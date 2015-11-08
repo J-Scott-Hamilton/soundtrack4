@@ -2,3 +2,5 @@ api/images/*.jpg
 api/images/*.png
 img/album-art
 vendor
+*.tar.gz
+*.sql

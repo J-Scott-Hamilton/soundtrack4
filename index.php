@@ -15,8 +15,8 @@ function stringToHtml($s)
 require_once __DIR__ . '/includes/keys.php';
 require_once __DIR__ . '/includes/fb.php';
 require_once __DIR__ . '/includes/api.php';
-require_once __DIR__ . '/includes/rdio/rdio.php';
-$rdio = new Rdio(array(RDIO_CONSUMER_KEY, RDIO_CONSUMER_SECRET));
+// require_once __DIR__ . '/includes/rdio/rdio.php';
+// $rdio = new Rdio(array(RDIO_CONSUMER_KEY, RDIO_CONSUMER_SECRET));
 
 $rdio = new \AdamPaterson\OAuth2\Client\Provider\Rdio([
     'clientId'          => RDIO_CONSUMER_KEY,
@@ -92,7 +92,7 @@ else
 {
    $params = array(
       'scope' => $facebook_scope,
-      'redirect_uri' => 'http://soundtrack4.com/login.php'
+      'redirect_uri' => $facebook_redirect_uri
    );
 
    $loginUrl = $facebook->getLoginUrl($params);

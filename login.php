@@ -150,13 +150,13 @@ if ($facebookUser)
    header('Location: http://' . $_SERVER['HTTP_HOST']);
    exit();
 }else{
-   $facebook_scope = 'offline_access,email,publish_stream';
    $params = array(
       'scope' => $facebook_scope,
-      'redirect_uri' => 'http://soundtrack4.com/login.php'
+      'redirect_uri' => $facebook_redirect_uri
    );
    $newurl = $facebook->getLoginUrl($params);
    header('Location: ' + $newurl);
+   exit();
 
 }
 var_dump($_SESSION);

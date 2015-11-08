@@ -1,16 +1,17 @@
 <?php
 
-$facebook_scope = 'offline_access,email,publish_stream';
+$facebook_scope = 'email,publish_actions';
 
-// Live
+// Soundtrack4 app ids (Oct 2015)
+$facebook_app_id = '181217025548582';
+$facebook_app_secret = '242a2311289ac51892c49b1007cbde23';
+$facebook_redirect_uri = 'http://soundtrack4.com/login.php';
 
-$facebook_app_id = '190267894396401';
-$facebook_app_secret = '971aa6ec3ea19ae228be852899e9b19c';
-
-// Beta
-
-$facebook_app_id = '309365045842756';
-$facebook_app_secret = '3411d924132986b5858528589b92df03';
+if(getenv("ST4_ENVIRONMENT") == "dev"){
+    $facebook_app_id = '1507569566203089';
+    $facebook_app_secret = '60451698bae7254b808231dbe63f3069';
+    $facebook_redirect_uri = 'http://soundtrack4.dev/login.php';
+}
 
 // Common
 
